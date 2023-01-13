@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function ModelY() {
   return (
@@ -9,7 +10,7 @@ function ModelY() {
         alt=""
       />
       <div className="flex justify-center font-medium">
-        <h1 className="relative text-black justify-center  text-5xl">
+        <h1 className="relative text-black justify-center  text-5xl mt-10">
           Model Y
         </h1>
       </div>
@@ -26,8 +27,10 @@ function ModelY() {
           <h2 className="text-3xl">137 194</h2>
           <p className="text-sm ">Kilométrage</p>
         </div>
-        <div className="relative flex flex-col  text-white px-10 pt-2  border-solid border-white border-[3px] rounded-xl">
-          <h2 className="text-3xl">Louer</h2>
+        <div className="relative flex flex-col  text-white px-10 pt-[5px]  border-solid border-white border-[3px] rounded-xl">
+          <Link to="/LocationY">
+            <button className="text-3xl">Louer</button>
+          </Link>
         </div>
       </div>
     </div>
